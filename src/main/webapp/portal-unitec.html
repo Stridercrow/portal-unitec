@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Portal Unitec Muestra</title>
+    <script src="js/libs/jquery-1.9.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".elemento_carrusel").click(function(){
+                $(this).animate({marginLeft: '-300px'},400);
+            });
+
+        });
+    </script>
+    <style>
+        body{
+        }
+        a{
+            text-decoration: none;
+            font-size: 0pt;
+            display: block;
+            height: 52px;
+        }
+        h1{
+            color: #ffffff;
+            text-align: center;
+        }
+        #contenedor_principal{
+            position: absolute;
+            top: 0px;
+            left: 0;
+            width: 100%;
+        }
+        #encabezado{
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 45px;
+            position: fixed;
+            background: #000000;
+            z-index: 10;
+        }
+        .logo{
+            width: 370px;
+            height: 45px;
+            float:left;
+        }
+        #menu{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        #menu li{
+            display: inline-block;
+            color: #868686;
+            padding: 15px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-family: 'Oswald', sans-serif;
+        }
+        #menu li:hover{
+            color: #D8D8D8;
+        }
+        #contenedor_portafolio{
+            width: 100%;
+            padding: 45px 0 0 0;
+        }
+        .fila{
+            height: 600px;
+            background: #AC58FA;
+            position: relative;
+            border: 1px solid #000000;
+        }
+        #portafolio{
+            position: relative;
+            overflow: hidden;
+            width: 75%;
+            height: 600px;
+            float: left;
+            z-index: 2;
+        }
+        #portafolio img{
+            width: 100%;
+            position: absolute;
+        }
+        #texto_portafolio{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 373px;
+            z-index: 1;
+            background: #042634;
+        }
+        #carrusel{
+            position: relative;
+            float: left;
+            width: 25%;
+            height: 600px;
+            background: #d7d7d7;
+        }
+        .elemento_carrusel{
+            margin-left: 20%;
+            margin-top: 20%;
+            display: block;
+            z-index:-1;
+        }
+        .muestra_elemento_carrusel{
+            margin-left: 20%;
+            margin-top: 20%;
+            display: block;
+        }
+        #pie{
+            height: 52px;
+            background: #FE642E;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor_principal">
+        <div id="encabezado">
+            <div class="logo">
+                <a href="http://sergiobaezf.wix.com/strekoarquitectos" target="_blank">STREKO</a>
+            </div>
+            <div>
+                <ul id="menu">
+                    <li>Principal</li>
+                    <li>Trabajo</li>
+                    <li>Acerca de Streko</li>
+                    <li>Contactanos</li>
+                </ul>
+            </div>
+        </div>
+        <div id="contenedor_portafolio">
+            <div class="fila">
+            </div>
+            <div class="fila">
+            </div>
+        </div>
+        <div id="pie"></div>
+    </div>
+</body>
+</html>
